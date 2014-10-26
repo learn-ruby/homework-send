@@ -16,7 +16,8 @@ gem 'rake'
 # Component requirements
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'mysql'
 
 # Test requirements
 gem 'rspec', :group => 'test'

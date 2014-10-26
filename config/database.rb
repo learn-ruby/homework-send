@@ -14,21 +14,40 @@
 #   }
 #
 ActiveRecord::Base.configurations[:development] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'homework_send_development.db')
-
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => 'homework_send_development',
+  :pool      => 5,
+  :username  => 'root',
+  :password  => '123456',
+  :host      => 'localhost',
+  :socket    => '/tmp/mysql.sock'
 }
 
 ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'homework_send_production.db')
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => 'homework_send_production',
+  :pool      => 5,
+  :username  => 'root',
+  :password  => '123456',
+  :host      => 'localhost',
+  :socket    => '/tmp/mysql.sock'
 
 }
 
 ActiveRecord::Base.configurations[:test] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'homework_send_test.db')
-
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => 'homework_send_test',
+  :pool      => 5,
+  :username  => 'root',
+  :password  => '123456',
+  :host      => 'localhost',
+  :socket    => '/tmp/mysql.sock'
 }
 
 # Setup our logger
