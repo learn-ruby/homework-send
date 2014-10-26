@@ -30,7 +30,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.4.2)
     moneta (0.7.20)
-    mysql (2.9.1)
+    mysql2 (0.3.16)
     padrino (0.12.2)
       padrino-admin (= 0.12.2)
       padrino-cache (= 0.12.2)
@@ -105,7 +105,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord (>= 3.1)
   haml
-  mysql
+  mysql2
   padrino (= 0.12.2)
   rack-test
   rake
